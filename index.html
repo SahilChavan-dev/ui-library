@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Right Side Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">MyLogo</div>
+        <div class="right-section">
+            <div class="profile-pic"></div>
+            <button class="login-btn">Login</button>
+            <button class="menu-toggle">&#x22EE;</button>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <button class="close-btn">&times;</button>
+        <a href="#" class="nav-link">Home</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Services</a>
+        <a href="#" class="nav-link">Contact</a>
+    </div>
+
+    <div class="home-section">
+        <h2>Elevate Your Designs with Stunning UI Components</h2>
+        <p>A collection of beautifully crafted, fully responsive, and highly customizable UI components designed to enhance your web projects effortlessly.</p>
+        <button class="home-btn">Explore Component</button>
+        <form class="search-bar" id="search-form" action="#" method="GET">
+            <input type="text" id="search-input" placeholder="Search components..." aria-label="Search components">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <section class="moving-cards">
+        <!-- First Forward Moving Cards -->
+        <div class="card-container forward">
+            <div class="card">Button Component</div>
+            <div class="card">Card Component</div>
+            <div class="card">Modal Component</div>
+            <div class="card">Slider Component</div>
+            <div class="card">Dropdown Component</div>
+            <div class="card">Tooltip Component</div>
+            <div class="card">Alert Component</div>
+            <!-- Duplicate for seamless animation -->
+            <div class="card">Button Component</div>
+            <div class="card">Card Component</div>
+            <div class="card">Modal Component</div>
+            <div class="card">Slider Component</div>
+            <div class="card">Dropdown Component</div>
+            <div class="card">Tooltip Component</div>
+            <div class="card">Alert Component</div>
+        </div>
+
+        <!-- Second Reverse Moving Cards -->
+        <div class="card-container reverse">
+            <div class="card">Button Component</div>
+            <div class="card">Card Component</div>
+            <div class="card">Modal Component</div>
+            <div class="card">Slider Component</div>
+            <div class="card">Dropdown Component</div>
+            <div class="card">Tooltip Component</div>
+            <div class="card">Alert Component</div>
+            <!-- Duplicate for seamless animation -->
+            <div class="card">Button Component</div>
+            <div class="card">Card Component</div>
+            <div class="card">Modal Component</div>
+            <div class="card">Slider Component</div>
+            <div class="card">Dropdown Component</div>
+            <div class="card">Tooltip Component</div>
+            <div class="card">Alert Component</div>
+        </div>
+
+        <!-- Third Forward Moving Cards -->
+        <div class="card-container forward">
+            <div class="card">Button Component</div>
+            <div class="card">Card Component</div>
+            <div class="card">Modal Component</div>
+            <div class="card">Slider Component</div>
+            <div class="card">Dropdown Component</div>
+            <div class="card">Tooltip Component</div>
+            <div class="card">Alert Component</div>
+            <!-- Duplicate for seamless animation -->
+            <div class="card">Button Component</div>
+            <div class="card">Card Component</div>
+            <div class="card">Modal Component</div>
+            <div class="card">Slider Component</div>
+            <div class="card">Dropdown Component</div>
+            <div class="card">Tooltip Component</div>
+            <div class="card">Alert Component</div>
+        </div>
+    </section>
+
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="testimonial">
+                <img src="image/pic1.jpeg" alt="John Doe" class="profile-pic">
+                <p>"This product changed my life! Highly recommend it to everyone."</p>
+                <p>- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <img src="image/pic2.jpeg" alt="Jane Smith" class="profile-pic">
+                <p>"Amazing service and fantastic support. Will definitely use again!"</p>
+                <p>- Jane Smith</p>
+            </div>
+            <div class="testimonial">
+                <img src="image/pic3.jpeg" alt="Alice Johnson" class="profile-pic">
+                <p>"A wonderful experience from start to finish. Five stars!"</p>
+                <p>- Alice Johnson</p>
+            </div>
+        </div>
+        <button class="arrow arrow-left" onclick="prevTestimonial()">&#10094;</button>
+        <button class="arrow arrow-right" onclick="nextTestimonial()">&#10095;</button>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>We provide a comprehensive UI library with a wide range of customizable components to enhance your
+                    web projects.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: support@uilibrary.com</p>
+                <p>Phone: +1 (234) 567-890</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/yourprofile" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/yourprofile" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/yourprofile" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-bottom">&copy; 2024 UI Library. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
